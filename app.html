@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shop thời trang đẹp Nam/Nữ</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Iceberg&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Slackey&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="header_top">
+                <div class="container header_top--container">
+                    <div class="header_top--left">
+                        <a href="#">Kênh người bán</a>
+                        <span class="separator">&nbsp;</span>
+                        <a href="#">Tải ứng dụng</a>
+                        <span class="separator">&nbsp;</span>
+                        <div class="header_top_social">
+                            <a href="#" class="header_top_social--fb">
+                                <img src="./img/fb.png" alt="">
+                            </a>
+                            <a href="#" class="header_top_social--ins">
+                                <img src="./img/ins.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="header_top--right">
+                        <div class="header_language">
+                            <span class="header_language--trigger">
+                                Ngôn ngữ
+                            </span>
+                            <!-- <ul class="dropdown-menu header__language--conten">
+                                    <li>
+                                        <a href="#">Tiếng Việt</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">English</a>
+                                    </li>
+                                </ul> -->
+
+                        </div>
+
+                        <div class="header_account">
+                            <a href="">
+                                <img src="./img/user.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="header_bottom">
+                <div class="container">
+                    <div class="container_bottom">
+                        <div class="logo">
+                            <a href="">
+                                <img src="./img/logo.jpg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="search">
+                            <div class="search_category">
+                                <span class="search_category--trigger">All</span>
+                                <!-- <ul class="dropdown-menu search_category-conten">
+                                        <li>All</li>
+                                        <li>Thời trang nam</li>
+                                        <li>Thời trang nữ</li>
+                                        <li>Handbage</li>
+                                        <li>Đồng hồ nữ</li>
+                                        <li>Đồ trẻ em</li>
+                                    </ul> -->
+                            </div>
+                            <div class="search_control">
+                                <input type="text" name="keyword" class="form-control"
+                                    placeholder="Bạn muốn tìm kiếm...">
+                            </div>
+                            <div class="search_actions">
+                                <button class="btn">
+                                    <img src="./img/unnamed.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <div class="cart_icon">
+                                <a href="./cart.html">
+                                    <img src="./img/cart_icon.png" alt="">
+                                    <!-- <span>0</span> -->
+                                </a>
+                                <div class="cart_list no-cart">
+                                    <span class="fa-caret-up"></span>
+                                    <h3>Giỏ hàng của bạn</h3>
+                                    <span class="cart-product">Không có sản phẩm nào trong giỏ hàng</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="header_menu">
+                <div class="container">
+                    <ul class="menu_item">
+                        <li class="menu_item--left">
+                            <a href="#">Thời trang nữ</a>
+                        </li>
+
+                        <li class="menu_item--right">
+                            <a href="#">On Sale Now!</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="page_manin">
+            <div class="container">
+                <div class="banner_1">
+                    <a href="#">
+                        <img src="./img/1.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="banner_2">
+                    <a href="#">
+                        <img src="./img/2.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="slider_banner">
+                    <img id="img" onclick="changeImg()" style="width: 1500px;" src="./img/1.png" alt="">
+
+                    <a class="button-left" href="#">
+                        <span>
+                            <i class="fas fa-arrow-left"></i>
+                        </span>
+                    </a>
+                    <a class="button-right" href="#">
+                        <span>
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product_list -->
+            <div class="product_1">
+                <div class="container">
+                    <div class="block-heading-1">
+                        <h2>Danh mục nổi bật</h2>
+                        <button>Shop all deals</button>
+                    </div>
+                    <div class="home_content">
+                        <div class="zoom">
+                            <a href="./product.html">
+                                <img class="fix" src="./img/sp1.jpg" alt="">
+                                <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                            </a>
+                            <span class="price">247.500₫</span>
+                            <span class="old-price">495.000₫</span>
+                            <span class="button-1">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+                        </div>
+                        <div class="zoom">
+                            <a href="#">
+                                <img src="./img/sp2.jpg" alt="">
+                                <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                            </a>
+                            <span class="price">247.500₫</span>
+                            <span class="old-price">495.000₫</span>
+                        </div>
+                        <div class="zoom">
+                            <a href="#">
+                                <img src="./img/sp3.jpg" alt="">
+                                <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                            </a>
+                            <span class="price">247.500₫</span>
+                            <span class="old-price">495.000₫</span>
+                        </div>
+                        <div class="zoom">
+                            <a href="#">
+                                <img src="./img/sp4.jpg" alt="">
+                                <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                            </a>
+                            <span class="price">247.500₫</span>
+                            <span class="old-price">495.000₫</span>
+                        </div>
+                        <div class="zoom">
+                            <a href="#">
+                                <img src="./img/sp5.jpg" alt="">
+                                <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                            </a>
+                            <span class="price">247.500₫</span>
+                            <span class="old-price">495.000₫</span>
+                            <span class="button-2">
+                                <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Brand -->
+            <div class="brand">
+                <div class="container">
+                    <div class="brand_img">
+                        <img class="brand_img-1" src="./img/4.jpg" alt="">
+                        <img class="brand_img-2" src="./img/5.jpg" alt="">
+                    </div>
+
+                    <img class="brand_in" src="./img/2.jpg" alt="">
+                </div>
+
+            </div>
+
+            <!-- Shipping -->
+            <div class="home_product-2">
+                <div class="container">
+                    <div class="block_heading-1">
+                        <div class="text_h2">
+                            <h2>Dành cho bạn</h2>
+                        </div>
+
+                        <div class="info">
+                            <img src="./img/product-2.png" alt="" srcset="">
+                        </div>
+
+                        <div class="check">
+                            <a href="#">Xem tất cả >></a>
+                        </div>
+
+                    </div>
+
+                    <!-- Block-conten 2 -->
+                    <div class="block-conten">
+                        <div class="home_content">
+                            <div class="zoom">
+                                <a href="#">
+                                    <img src="./img/sp1.jpg" alt="">
+                                    <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                                </a>
+                                <span class="price">247.500₫</span>
+                                <span class="old-price">495.000₫</span>
+                                <span class="button-1">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                            </div>
+                            <div class="zoom">
+                                <a href="#">
+                                    <img src="./img/sp2.jpg" alt="">
+                                    <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                                </a>
+                                <span class="price">247.500₫</span>
+                                <span class="old-price">495.000₫</span>
+                            </div>
+                            <div class="zoom">
+                                <a href="#">
+                                    <img src="./img/sp3.jpg" alt="">
+                                    <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                                </a>
+                                <span class="price">247.500₫</span>
+                                <span class="old-price">495.000₫</span>
+                            </div>
+                            <div class="zoom">
+                                <a href="#">
+                                    <img src="./img/sp4.jpg" alt="">
+                                    <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                                </a>
+                                <span class="price">247.500₫</span>
+                                <span class="old-price">495.000₫</span>
+                            </div>
+                            <div class="zoom">
+                                <a href="#">
+                                    <img src="./img/sp5.jpg" alt="">
+                                    <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                                </a>
+                                <span class="price">247.500₫</span>
+                                <span class="old-price">495.000₫</span>
+                                <span class="button-2">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Promotion -->
+            <div class="promotion">
+                <div class="container">
+                    <div class="prmotion-main">
+                        <a href="#">
+                            <img src="./img/promotion.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product_today -->
+            <div class="product_today">
+                <div class="container">
+                    <div class="block-heading">
+                        <h2 class="text">Gợi ý hôm nay</h2>
+                        <a href="#" class="see-all">
+                            Xem tất cả
+                            <span>>></span>
+                        </a>
+                    </div>
+
+                    <div class="block-conten-1">
+                        <div class="home_content">
+                            <div class="zoom">
+                                <a href="#">
+                                    <img src="./img/vay1.jpg" alt="">
+                                    <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                                </a>
+                                <span class="price">247.500₫</span>
+                                <span class="old-price">495.000₫</span>
+                            </div>
+                            <div class="zoom">
+                                <a href="#">
+                                    <img src="./img/vay2.jpg" alt="">
+                                    <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                                </a>
+                                <span class="price">247.500₫</span>
+                                <span class="old-price">495.000₫</span>
+                            </div>
+                            <div class="zoom">
+                                <a href="#">
+                                    <img src="./img/vay3.jpg" alt="">
+                                    <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                                </a>
+                                <span class="price">247.500₫</span>
+                                <span class="old-price">495.000₫</span>
+                            </div>
+                            <div class="zoom">
+                                <a href="#">
+                                    <img src="./img/vay4.jpg" alt="">
+                                    <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                                </a>
+                                <span class="price">247.500₫</span>
+                                <span class="old-price">495.000₫</span>
+                            </div>
+                            <div class="zoom">
+                                <a href="#">
+                                    <img src="./img/vay5.jpg" alt="">
+                                    <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                                </a>
+                                <span class="price">247.500₫</span>
+                                <span class="old-price">495.000₫</span>
+                            </div>
+                            <div class="zoom">
+                                <a href="#">
+                                    <img src="./img/vay6.jpg" alt="">
+                                    <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                                </a>
+                                <span class="price">247.500₫</span>
+                                <span class="old-price">495.000₫</span>
+                            </div>
+                            <div class="zoom">
+                                <a href="#">
+                                    <img src="./img/vay7.jpg" alt="">
+                                    <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                                </a>
+                                <span class="price">247.500₫</span>
+                                <span class="old-price">495.000₫</span>
+                            </div>
+                            <div class="zoom">
+                                <a href="#">
+                                    <img src="./img/vay8.jpg" alt="">
+                                    <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                                </a>
+                                <span class="price">247.500₫</span>
+                                <span class="old-price">495.000₫</span>
+                            </div>
+                            <div class="zoom">
+                                <a href="#">
+                                    <img src="./img/vay9.jpg" alt="">
+                                    <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                                </a>
+                                <span class="price">247.500₫</span>
+                                <span class="old-price">495.000₫</span>
+                            </div>
+                            <div class="zoom">
+                                <a href="#">
+                                    <img src="./img/vay10.jpg" alt="">
+                                    <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                                </a>
+                                <span class="price">247.500₫</span>
+                                <span class="old-price">495.000₫</span>
+                            </div>
+                            <div class="zoom">
+                                <a href="#">
+                                    <img src="./img/vay11.jpg" alt="">
+                                    <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                                </a>
+                                <span class="price">247.500₫</span>
+                                <span class="old-price">495.000₫</span>
+                            </div>
+                            <div class="zoom">
+                                <a href="#">
+                                    <img src="./img/vay12.jpg" alt="">
+                                    <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                                </a>
+                                <span class="price">247.500₫</span>
+                                <span class="old-price">495.000₫</span>
+                            </div>
+                            <div class="zoom">
+                                <a href="#">
+                                    <img src="./img/vay13.jpg" alt="">
+                                    <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                                </a>
+                                <span class="price">247.500₫</span>
+                                <span class="old-price">495.000₫</span>
+                            </div>
+                            <div class="zoom">
+                                <a href="#">
+                                    <img src="./img/vay14.jpg" alt="">
+                                    <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                                </a>
+                                <span class="price">247.500₫</span>
+                                <span class="old-price">495.000₫</span>
+                            </div>
+                            <div class="zoom">
+                                <a href="#">
+                                    <img src="./img/vay15.jpg" alt="">
+                                    <p>Quần tây nữ 92WEAR âu baggy công sở, đi chơi QAW0454</p>
+                                </a>
+                                <span class="price">247.500₫</span>
+                                <span class="old-price">495.000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-heading-1">
+                <button>Shop all deals</button>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer_top">
+                <div class="container">
+                    <div class="footer_top-row">
+                        <div class="support">
+                            <h3>Hỗ trợ khách hàng</h3>
+                            <div class="hotline">
+                                Hotline chăm sóc khách hàng: 1900-6035 (1000đ/phút , 8-21h kể cả T7, CN)
+                            </div>
+                            <ul>
+                                <li><a href="#">Hướng dẫn mua hàng</a></li>
+                                <li><a href="#">Chính sách vận chuyển</a></li>
+                                <li><a href="#">Chính sách đối trả</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="security">
+                            <h3>Về 92WEAR</h3>
+                            <ul>
+                                <li><a href="#">Giới thiệu 92WEAR</a></li>
+                                <li><a href="#">Tuyển dụng</a></li>
+                                <li><a href="#">Chính sách bảo mật</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="cooperate">
+                            <h3>Hợp tác và liên kết</h3>
+                            <ul>
+                                <li><a href="#">Bán hàng cùng 92WEAR</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="pay">
+                            <h3>Phương thức thanh toán</h3>
+                            <div class="row-payment">
+                                <div class="col">
+                                    <img src="./img/payment1.png" alt="">
+                                </div>
+                                <div class="col">
+                                    <img src="./img/payment2.png" alt="">
+                                </div>
+                                <div class="col">
+                                    <img src="./img/payment3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="row-payment">
+                                <div class="col">
+                                    <img src="./img/payment4.png" alt="">
+                                </div>
+                                <div class="col">
+                                    <img src="./img/payment5.png" alt="">
+                                </div>
+                                <div class="col">
+                                    <img src="./img/payment6.png" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="connect">
+                            <h3>Kết nối với chúng tôi</h3>
+                            <div class="social-network">
+                                <a href="#">
+                                    <img src="./img/facebook.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./img/youtube.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./img/instagram.png" alt="">
+                                </a>
+                            </div>
+                            <div class="down">
+                                <h3>Tải ứng dụng</h3>
+                                <a href="#">
+                                    <img src="./img/appstore.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./img/googleplay.png" alt="">
+                                </a>
+                            </div>
+                            <div class="zalo">
+                                <h3>Theo dõi Zalo</h3>
+                                <a href="#">
+                                    <img src="./img/zalo_92wear.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <b>Địa chỉ văn phòng:</b>
+                    Lô S3-1, cụm làng nghề Tân Triều, Triều Khúc, Thanh Xuân, Hà Nội
+                    <br>
+                    92WEAR nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua và nhận hàng trực tiếp
+                    <br>
+                    tại văn phòng hoặc trung tâm xử lý đơn hàng
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
